@@ -955,6 +955,11 @@ input[type=number] {
     padding: 0 7px;
     line-height: 30px;
 }
+.dropdown-item {
+    padding: 0px 6px !important;
+    font-size: 15px !important;
+    line-height: 30px;
+}
 
 
 

@@ -943,6 +943,10 @@ input[type=number] {
 .content-section.about-page-content p {
     margin-bottom: 25px;
 }
+.dropdown-item {
+    padding: 5px 6px !important;
+    font-size: 15px !important;
+}
 
 
 

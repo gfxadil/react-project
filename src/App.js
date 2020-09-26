@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick.js";
 import Home from './Home';
 import About from './About';
 import Pricing from './Pricing';
-import Header from './Header';
-import Footer from './Footer';
 import ViewAllVideos from './ViewAllVideos';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
 import Slick from './Custom';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -21,9 +21,10 @@ const App = () => {
 				<Route exact path="/about" component={About} />
 				<Route exact path="/pricing" component={Pricing} />
 				<Route exact path="/viewallvideos" component={ViewAllVideos} />
+				<Route exact path="/signin" component={SignIn} />
+				<Route exact path="/signup" component={SignUp} />
 				<Redirect to="/" />
 			</Switch>
-			<Footer	/>	
 		</>
 	)
 }

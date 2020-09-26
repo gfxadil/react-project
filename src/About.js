@@ -4,15 +4,16 @@ import aboutImg1 from "../src/images/olga-guryanova-rWiso0uMjAs-unsplash.jpg";
 import aboutImg2 from "../src/images/national-cancer-institute-KrsoedfRAf4-unsplash.jpg";
 import { NavLink } from 'react-router-dom';
 import InnerPageHeader from './InnerPageHeader';
+import Footer from './Footer';
 
 const About = () => {
 	return (
 		<>
 			<InnerPageHeader />
-			<div className="subheader">
-				<h1 className="heading-style1">About Us</h1>
-			</div>
-			<section className="content-section about-page-content">
+				<div className="subheader">
+					<h1 className="heading-style1">About Us</h1>
+				</div>
+				<section className="content-section about-page-content">
 				<div className="container">
 					<div className="row align-items-center mb-5">
 						<div className="col-md-6">
@@ -38,6 +39,7 @@ const About = () => {
 					</div>
 				</div>
 			</section>
+			<Footer	/>
 		</>
 	)
 }

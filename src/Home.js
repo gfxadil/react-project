@@ -13,6 +13,7 @@ import medicalImg1 from "../src/images/doc.jpg";
 import liveVideoPoster from "../src/images/live-video.jpg";
 import { NavLink } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 import SearchBar from './SearchBar';
 import ViewAllVideos from './ViewAllVideos';
 
@@ -20,105 +21,105 @@ const Home = () => {
 	return (
 		<>
 			<Header />
-			<section className="main-banner">
-				<div className="container">
-					<div className="row justify-content-center">
-						<div className="col-md-8 text-center">
-							<h1>Sed ut perspiciatis unde omnis iste natus</h1>
-							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore.</p>
-							<NavLink to="#" className="theme-btn">Start a Free Trial</NavLink>
-							<SearchBar />	
-							<img src={scrollImg} className="img-fluid scrolling-img" alt="slider" />
-						</div>
-					</div>
-				</div>
-			</section>
-			<section className="about-section">
-				<div className="container">
-					<div className="row justify-content-center text-center">
-						<div className="col-md-10">
-							<h2 className="heading-style1">About <span>Us</span></h2>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-							<NavLink to="#" className="theme-btn mt-3">More Detail</NavLink>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section className="trending-section">
-				<div className="container-fluid">
-					<div className="row">
-						<div className="col-md-6 trending-block">
-							<div className="row mb-2">
-								<div className="col-md-9">
-									<h2 className="heading-style2">Trending <span>Videos</span></h2>
-								</div>
-								<div className="col-md-3">
-									<NavLink to="/ViewAllVideos" className="hvr-icon-wobble-horizontal view-all-btn">
-										View all <img src={nextWhiteIcon} className="img-fluid hvr-icon" alt="arrow" />
-									</NavLink>
-								</div>	
+				<section className="main-banner">
+					<div className="container">
+						<div className="row justify-content-center">
+							<div className="col-md-8 text-center">
+								<h1>Sed ut perspiciatis unde omnis iste natus</h1>
+								<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore.</p>
+								<NavLink to="#" className="theme-btn">Start a Free Trial</NavLink>
+								<SearchBar />	
+								<img src={scrollImg} className="img-fluid scrolling-img" alt="slider" />
 							</div>
-							<div className="trending-slider row">
-								<div className="col-md-6">
-									<div className="theme-block-style">
-										<video loop className="trending-video" controls poster="{videoPoster}">
-											<source src={dummyVideo} type="video/mp4" />
-										</video>
-										<h4>Neque porro quisquam</h4>
-										<ul className="block-style">
-											<li>
-												<img src={likeIcon} className="img-fluid" alt="icon" />
-												<h6>137</h6>
-											</li>
-											<li>
-												<img src={shareIcon} className="img-fluid" alt="icon" />
-												<h6>200</h6>
-											</li>
-										</ul>
+						</div>
+					</div>
+				</section>
+				<section className="about-section">
+					<div className="container">
+						<div className="row justify-content-center text-center">
+							<div className="col-md-10">
+								<h2 className="heading-style1">About <span>Us</span></h2>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+								<NavLink to="#" className="theme-btn mt-3">More Detail</NavLink>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section className="trending-section">
+					<div className="container-fluid">
+						<div className="row">
+							<div className="col-md-6 trending-block">
+								<div className="row mb-2">
+									<div className="col-md-9">
+										<h2 className="heading-style2">Trending <span>Videos</span></h2>
+									</div>
+									<div className="col-md-3">
+										<NavLink to="/ViewAllVideos" className="hvr-icon-wobble-horizontal view-all-btn">
+											View all <img src={nextWhiteIcon} className="img-fluid hvr-icon" alt="arrow" />
+										</NavLink>
+									</div>	
+								</div>
+								<div className="trending-slider row">
+									<div className="col-md-6">
+										<div className="theme-block-style">
+											<video loop className="trending-video" controls poster="{videoPoster}">
+												<source src={dummyVideo} type="video/mp4" />
+											</video>
+											<h4>Neque porro quisquam</h4>
+											<ul className="block-style">
+												<li>
+													<img src={likeIcon} className="img-fluid" alt="icon" />
+													<h6>137</h6>
+												</li>
+												<li>
+													<img src={shareIcon} className="img-fluid" alt="icon" />
+													<h6>200</h6>
+												</li>
+											</ul>
+										</div>
+									</div>	
+									<div className="col-md-6">
+										<div className="theme-block-style">
+											<video loop className="trending-video" controls poster="{videoPoster}">
+												<source src={dummyVideo} type="video/mp4" />
+											</video>
+											<h4>Neque porro quisquam</h4>
+											<ul className="block-style">
+												<li>
+													<img src={likeIcon} className="img-fluid" alt="icon" />
+													<h6>137</h6>
+												</li>
+												<li>
+													<img src={shareIcon} className="img-fluid" alt="icon" />
+													<h6>200</h6>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>	
-								<div className="col-md-6">
-									<div className="theme-block-style">
-										<video loop className="trending-video" controls poster="{videoPoster}">
-											<source src={dummyVideo} type="video/mp4" />
-										</video>
-										<h4>Neque porro quisquam</h4>
-										<ul className="block-style">
-											<li>
-												<img src={likeIcon} className="img-fluid" alt="icon" />
-												<h6>137</h6>
-											</li>
-											<li>
-												<img src={shareIcon} className="img-fluid" alt="icon" />
-												<h6>200</h6>
-											</li>
-										</ul>
+							</div>	
+							<div className="col-md-6 text-center doctor-block">
+								<div className="top-doctor">
+									<h2 className="heading-style1">Top <span>Doctors</span></h2>
+									<div className="row">
+										<div className="col-md-6">
+											<img src={topDoctor1} className="img-fluid" alt="doctor" />
+											<h5>Neque porro quisquam</h5>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit volu ptatem</p>
+										</div>
+										<div className="col-md-6">
+											<img src={topDoctor2} className="img-fluid" alt="doctor" />
+											<h5>Neque porro quisquam</h5>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit volu ptatem</p>
+										</div>
 									</div>
 								</div>
 							</div>	
-						</div>	
-						<div className="col-md-6 text-center doctor-block">
-							<div className="top-doctor">
-								<h2 className="heading-style1">Top <span>Doctors</span></h2>
-								<div className="row">
-									<div className="col-md-6">
-										<img src={topDoctor1} className="img-fluid" alt="doctor" />
-										<h5>Neque porro quisquam</h5>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit volu ptatem</p>
-									</div>
-									<div className="col-md-6">
-										<img src={topDoctor2} className="img-fluid" alt="doctor" />
-										<h5>Neque porro quisquam</h5>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit volu ptatem</p>
-									</div>
-								</div>
-							</div>
-						</div>	
+						</div>
 					</div>
-				</div>
-			</section>
-			<section className="medical-publish">
+				</section>
+				<section className="medical-publish">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-6">
@@ -191,6 +192,7 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
+			<Footer	/>
 		</>
 	)
 }

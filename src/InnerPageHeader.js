@@ -47,9 +47,9 @@ const InnerPageHeader = () => {
 								John Doe
 							</NavLink>
 							<div className="dropdown-menu">
-								<NavLink className="dropdown-item" to="#">Link 1</NavLink>
-								<NavLink className="dropdown-item" to="#">Link 2</NavLink>
-								<NavLink className="dropdown-item" to="#">Link 3</NavLink>
+								<NavLink className="dropdown-item" to="/signin">Sign In</NavLink>
+								<NavLink className="dropdown-item" to="#">Profile</NavLink>
+								<NavLink className="dropdown-item" to="#">Dashboard</NavLink>
 							</div>
 						</li>
 						<li className="language-dropdown dropdown">
@@ -57,9 +57,7 @@ const InnerPageHeader = () => {
 								English
 							</NavLink>
 							<div className="dropdown-menu">
-								<NavLink className="dropdown-item" to="#">Link 1</NavLink>
-								<NavLink className="dropdown-item" to="#">Link 2</NavLink>
-								<NavLink className="dropdown-item" to="#">Link 3</NavLink>
+								<NavLink className="dropdown-item" to="#">Greek</NavLink>
 							</div>
 						</li>
 					</ul>
