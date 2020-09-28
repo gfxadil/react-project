@@ -4,6 +4,7 @@ import newsletterIcon from "../src/images/send.png";
 import facebookIcon from "../src/images/facebook.png";
 import instagramIcon from "../src/images/instagram.png";
 import youtubeIcon from "../src/images/you.png";
+import dummyVideo from "../src/images/dummy-video.mp4";
 import twitterIcon from "../src/images/twitter.png";
 import { NavLink } from 'react-router-dom';
 
@@ -73,6 +74,23 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+ 
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+                <div class="modal-content-full-width modal-content ">
+                    <div class=" modal-header-full-width modal-header text-center">
+                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <video width="100%" autoPlay controls>
+                            <source src={dummyVideo} type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
      </>
     )
 }

@@ -11,6 +11,7 @@ import topDoctor1 from "../src/images/Group1238.png";
 import topDoctor2 from "../src/images/Group1239.png";
 import medicalImg1 from "../src/images/doc.jpg";
 import liveVideoPoster from "../src/images/live-video.jpg";
+import VideoImgModal from "../src/images/video-img-modal.png";
 import { NavLink } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
@@ -63,9 +64,9 @@ const Home = () => {
 								<div className="trending-slider row">
 									<div className="col-md-6">
 										<div className="theme-block-style">
-											<video loop className="trending-video" controls poster="{videoPoster}">
-												<source src={dummyVideo} type="video/mp4" />
-											</video>
+											<NavLink to="#" data-toggle="modal" data-target="#videoModal">
+												<img src={VideoImgModal} className="img-fluid" alt="medical" />										
+											</NavLink>		
 											<h4>Neque porro quisquam</h4>
 											<ul className="block-style">
 												<li>
@@ -81,9 +82,9 @@ const Home = () => {
 									</div>	
 									<div className="col-md-6">
 										<div className="theme-block-style">
-											<video loop className="trending-video" controls poster="{videoPoster}">
-												<source src={dummyVideo} type="video/mp4" />
-											</video>
+											<NavLink to="#" data-toggle="modal" data-target="#videoModal">
+												<img src={VideoImgModal} className="img-fluid" alt="medical" />										
+											</NavLink>
 											<h4>Neque porro quisquam</h4>
 											<ul className="block-style">
 												<li>
@@ -120,78 +121,78 @@ const Home = () => {
 					</div>
 				</section>
 				<section className="medical-publish">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-6">
-							<div className="medical-block">
-								<div className="row mb-2">
-									<div className="col-md-9">
-										<h2 className="heading-style2">Medical <span>Publications</span></h2>
+					<div className="container">
+						<div className="row">
+							<div className="col-md-6">
+								<div className="medical-block">
+									<div className="row mb-2">
+										<div className="col-md-9">
+											<h2 className="heading-style2">Medical <span>Publications</span></h2>
+										</div>
+										<div className="col-md-3">
+											<NavLink to="/ViewAllVideos" className="hvr-icon-wobble-horizontal view-all-btn">View all <img src={nextBlueIcon} className="img-fluid hvr-icon" alt="arrow" />
+											</NavLink>
+										</div>	
 									</div>
-									<div className="col-md-3">
-										<NavLink to="/ViewAllVideos" className="hvr-icon-wobble-horizontal view-all-btn">View all <img src={nextBlueIcon} className="img-fluid hvr-icon" alt="arrow" />
-										</NavLink>
-									</div>	
-								</div>
-								<div className="row">
-									<div className="col-md-6">
-										<div className="theme-block-style medical-list">
-											<img src={medicalImg1} className="img-fluid" alt="medical" />
-											<h4>Neque porro quisquam</h4>
-											<ul className="block-style">
-												<li>
-													<img src={likeIcon} className="img-fluid" alt="icon" />
-													<h6>137</h6>
-												</li>
-												<li>
-													<img src={shareIcon} className="img-fluid" alt="icon" />
-													<h6>200</h6>
-												</li>
-											</ul>
+									<div className="row">
+										<div className="col-md-6">
+											<div className="theme-block-style medical-list">
+												<img src={medicalImg1} className="img-fluid" alt="medical" />
+												<h4>Neque porro quisquam</h4>
+												<ul className="block-style">
+													<li>
+														<img src={likeIcon} className="img-fluid" alt="icon" />
+														<h6>137</h6>
+													</li>
+													<li>
+														<img src={shareIcon} className="img-fluid" alt="icon" />
+														<h6>200</h6>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div className="col-md-6">
+											<div className="theme-block-style medical-list">
+												<img src={medicalImg1} className="img-fluid" alt="medical" />
+												<h4>Neque porro quisquam</h4>
+												<ul className="block-style">
+													<li>
+														<img src={likeIcon} className="img-fluid" alt="icon" />
+														<h6>137</h6>
+													</li>
+													<li>
+														<img src={shareIcon} className="img-fluid" alt="icon" />
+														<h6>200</h6>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
-									<div className="col-md-6">
-										<div className="theme-block-style medical-list">
-											<img src={medicalImg1} className="img-fluid" alt="medical" />
-											<h4>Neque porro quisquam</h4>
-											<ul className="block-style">
-												<li>
-													<img src={likeIcon} className="img-fluid" alt="icon" />
-													<h6>137</h6>
-												</li>
-												<li>
-													<img src={shareIcon} className="img-fluid" alt="icon" />
-													<h6>200</h6>
-												</li>
-											</ul>
+								</div>	
+							</div>
+							<div className="col-md-6">
+								<div className="live-operate">
+									<div className="row mb-2">
+										<div className="col-md-9">
+											<h2 className="heading-style2">Live Operations <span>Room</span></h2>
 										</div>
+										<div className="col-md-3">
+											<NavLink to="#" className="hvr-icon-wobble-horizontal float-right view-all-btn">View all <img src={nextBlueIcon} className="img-fluid hvr-icon" alt="arrow" />	
+											</NavLink>
+										</div>	
 									</div>
-								</div>
-							</div>	
-						</div>
-						<div className="col-md-6">
-							<div className="live-operate">
-								<div className="row mb-2">
-									<div className="col-md-9">
-										<h2 className="heading-style2">Live Operations <span>Room</span></h2>
-									</div>
-									<div className="col-md-3">
-										<NavLink to="#" className="hvr-icon-wobble-horizontal float-right view-all-btn">View all <img src={nextBlueIcon} className="img-fluid hvr-icon" alt="arrow" />	
-										</NavLink>
-									</div>	
-								</div>
-								<div className="row">
-									<div className="col-md-12">
-										<video width="100%" className="trending-video" controls poster={liveVideoPoster}>
-											<source src={dummyVideo} type="video/mp4" />
-										</video>
+									<div className="row">
+										<div className="col-md-12">
+											<NavLink to="#" data-toggle="modal" data-target="#videoModal">
+												<img src={liveVideoPoster} className="img-fluid" alt="medical" />										
+											</NavLink>	
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 			<Footer	/>
 		</>
 	)
