@@ -43,7 +43,7 @@ const Footer = () => {
                         <div className="col-md-3 pl-5">
                             <h4>Our Links</h4>
                             <ul>
-                                <li><NavLink to="/">Feeds</NavLink></li>
+                                <li><NavLink to="/feeds">Feeds</NavLink></li>
                                 <li><NavLink to="/">Impressum</NavLink></li>
                                 <li><NavLink to="/">Cookies</NavLink></li>
                                 <li><NavLink to="/">Contact</NavLink></li>

@@ -10,7 +10,10 @@ import Pricing from './Pricing';
 import ViewAllVideos from './ViewAllVideos';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import Slick from './Custom';
+import Calendar from './Calendar';
+import News from './News';
+import Feeds from './Feeds';
+import EventDetail from './EventDetail';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 const App = () => {
@@ -23,6 +26,10 @@ const App = () => {
 				<Route exact path="/viewallvideos" component={ViewAllVideos} />
 				<Route exact path="/signin" component={SignIn} />
 				<Route exact path="/signup" component={SignUp} />
+				<Route exact path="/calendar" component={Calendar} />
+				<Route exact path="/news" component={News} />
+				<Route exact path="/feeds" component={Feeds} />
+				<Route exact path="/eventdetail" component={EventDetail} />
 				<Redirect to="/" />
 			</Switch>
 		</>
