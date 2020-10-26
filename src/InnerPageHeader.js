@@ -38,7 +38,7 @@ const InnerPageHeader = () => {
 				<div className="right-menu">
 					<ul>
 						<li>
-							<NavLink to="/">
+							<NavLink to="/notifications">
 								<img src={notificationBlackIcon} className="img-fluid top-notification" alt="notification" />
 							</NavLink>
 						</li>
@@ -48,8 +48,9 @@ const InnerPageHeader = () => {
 							</NavLink>
 							<div className="dropdown-menu">
 								<NavLink className="dropdown-item" to="/signin">Sign In</NavLink>
-								<NavLink className="dropdown-item" to="#">Profile</NavLink>
-								<NavLink className="dropdown-item" to="#">Dashboard</NavLink>
+								<NavLink className="dropdown-item" to="/setting">Setting</NavLink>
+								<NavLink className="dropdown-item" to="/billing-plan">Billing Plan</NavLink>
+								<NavLink className="dropdown-item" to="/invoice">Invoice</NavLink>
 							</div>
 						</li>
 						<li className="language-dropdown dropdown">

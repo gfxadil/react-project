@@ -14,7 +14,19 @@ import Calendar from './Calendar';
 import News from './News';
 import Feeds from './Feeds';
 import EventDetail from './EventDetail';
+import Impressum from './Impressum';
+import Cookies from './Cookies';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import PrivacyPolicy from './PrivacyPolicy';
+import TermsCondition from './TermsCondition';
+import Notifications from './Notifications';
+import Contact from './Contact';
+import Faqs from './Faqs';
+import Setting from './Setting';
+import BillingPlan from './BillingPlan';
+import Invoice from './Invoice';
+import ContentUpload from './ContentUpload';
+import ViewAllDoctors from './ViewAllDoctors';
 
 const App = () => {
 	return (
@@ -30,6 +42,18 @@ const App = () => {
 				<Route exact path="/news" component={News} />
 				<Route exact path="/feeds" component={Feeds} />
 				<Route exact path="/eventdetail" component={EventDetail} />
+				<Route exact path="/impressum" component={Impressum} />
+				<Route exact path="/cookies" component={Cookies} />
+				<Route exact path="/privacy-policy" component={PrivacyPolicy} />
+				<Route exact path="/terms-condition" component={TermsCondition} />
+				<Route exact path="/notifications" component={Notifications} />
+				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/faqs" component={Faqs} />
+				<Route exact path="/setting" component={Setting} />
+				<Route exact path="/billing-plan" component={BillingPlan} />
+				<Route exact path="/invoice" component={Invoice} />
+				<Route exact path="/content-upload" component={ContentUpload} />
+				<Route exact path="/view-all-doctors" component={ViewAllDoctors} />
 				<Redirect to="/" />
 			</Switch>
 		</>

@@ -931,7 +931,7 @@ input[type=number] {
 .content-section ul {
     margin-left: 20px;
     margin-bottom: 30px;
-    list-style: disc;
+    list-style: disc !important;
 }
 /*ABOUT US PAGE STYLE*/
 .subheader.about-subheader {

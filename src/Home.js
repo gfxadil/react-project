@@ -100,10 +100,17 @@ const Home = () => {
 									</div>
 								</div>	
 							</div>	
-							<div className="col-md-6 text-center doctor-block">
+							<div className="col-md-6 doctor-block">
 								<div className="top-doctor">
-									<h2 className="heading-style1">Top <span>Doctors</span></h2>
-									<div className="row">
+									<div className="row mb-2">
+										<div className="col-md-9">
+											<h2 className="heading-style1">Top <span>Doctors</span></h2>
+										</div>
+										<div className="col-md-3">
+											<NavLink to="/view-all-doctors" className="hvr-icon-wobble-horizontal view-all-btn">View all <img src={nextBlueIcon} className="img-fluid hvr-icon" alt="arrow" /></NavLink>
+										</div>	
+									</div>
+									<div className="row text-center">
 										<div className="col-md-6">
 											<img src={topDoctor1} className="img-fluid" alt="doctor" />
 											<h5>Neque porro quisquam</h5>

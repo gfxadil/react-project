@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import aboutImg1 from "../src/images/olga-guryanova-rWiso0uMjAs-unsplash.jpg";
 import aboutImg2 from "../src/images/national-cancer-institute-KrsoedfRAf4-unsplash.jpg";
-import { NavLink } from 'react-router-dom';
 import InnerPageHeader from './InnerPageHeader';
 import Footer from './Footer';
 

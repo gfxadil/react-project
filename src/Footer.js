@@ -44,18 +44,18 @@ const Footer = () => {
                             <h4>Our Links</h4>
                             <ul>
                                 <li><NavLink to="/feeds">Feeds</NavLink></li>
-                                <li><NavLink to="/">Impressum</NavLink></li>
-                                <li><NavLink to="/">Cookies</NavLink></li>
-                                <li><NavLink to="/">Contact</NavLink></li>
+                                <li><NavLink to="/impressum">Impressum</NavLink></li>
+                                <li><NavLink to="/cookies">Cookies</NavLink></li>
+                                <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
                         </div>
                         <div className="col-md-3">
                             <h4>Support</h4>
                             <ul>
                                 <li><NavLink to="/about">About Us</NavLink></li>
-                                <li><NavLink to="/">Faq's</NavLink></li>
-                                <li><NavLink to="/">Terms &nbps; Condition</NavLink></li>
-                                <li><NavLink to="/">Privacy Policy</NavLink></li>
+                                <li><NavLink to="/faqs">Faq's</NavLink></li>
+                                <li><NavLink to="/terms-condition">Terms & Condition</NavLink></li>
+                                <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
                             </ul>
                         </div>
                         <div className="col-md-2">
